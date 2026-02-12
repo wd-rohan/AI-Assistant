@@ -25,7 +25,7 @@ function SignIn() {
           password,
         },
         { withCredentials: true },
-      );
+      );localStorage.setItem("token", result.data.token);
       console.log(result);
       setUserData(result.data);
       console.log(result);
